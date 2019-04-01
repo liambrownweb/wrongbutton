@@ -1,0 +1,37 @@
+.title_screen
+	height 100%
+	width 100%
+	position absolute
+	background-color white
+
+.view_box
+	height 100%
+	width 100%
+	top 0
+	left 0
+	position absolute
+	overflow hidden
+	&.fade
+		transition 500ms ease-out
+	&.faded_out
+		opacity 0
+		pointer-events none
+	&.iris
+		transition 500ms ease-in
+	&.iris_out
+		border-radius 50%
+		left 50%
+		top 50%
+		height 0
+		width 0
+		pointer-events none
+	&.slide
+		transition 500ms ease-out
+	&.to_top
+		top -100%
+	&.to_right
+		left 100%
+	&.to_bottom
+		top 100%
+	&.to_left
+		left -100%
